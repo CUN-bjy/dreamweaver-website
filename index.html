@@ -68,7 +68,7 @@
                   <div class="is-size-5 publication-authors">
                     <span class="author-block-kaist"><sup>1</sup>KAIST,</span>
                     <span class="author-block-rutgers"><sup>2</sup>Rutgers Univercity</span>
-                    <span class="author-block" style="font-size: 1.25em;"><br>💫ICLR 2025🎉</span>
+                    <span class="author-block" style="font-size: 1.25em;"><br><br>💫ICLR 2025🎉</span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
@@ -150,9 +150,9 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
+            <p style="font-size: 1.2em;">
             Humans have an innate ability to decompose their perceptions of the world into objects and their attributes, such as colors, shapes, and movement patterns. This cognitive process enables us to imagine novel futures by recombining familiar concepts. However, replicating this ability in artificial intelligence systems has proven challenging, particularly when it comes to modeling videos into compositional concepts and generating unseen, recomposed futures without relying on auxiliary data, such as text, masks, or bounding boxes. In this paper, we propose <b>Dreamweaver, a neural architecture designed to discover hierarchical and compositional representations from raw videos and generate compositional future simulations.</b> Our approach leverages a novel Recurrent Block-Slot Unit (RBSU) to decompose videos into their constituent objects and attributes. In addition, Dreamweaver uses a multi-future-frame prediction objective to capture disentangled representations for dynamic concepts more effectively as well as static concepts. In experiments, we demonstrate our model outperforms current state-of-the-art baselines for world modeling when evaluated under the DCI framework across multiple datasets. Furthermore, we show how the modularized concept representations of our model enable compositional imagination, allowing the generation of novel videos by recombining attributes from different objects.
-          </p>
+            </p>
         </div>
       </div>
     </div>
@@ -165,11 +165,11 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Dreamweaver Framework</h2>
+        <h2 class="title is-3">Overview of Dreamweaver Framework</h2>
 
         <div class="content has-text-justified">
           <img src="static/images/figure-one.png" alt="Dreamweaver Framework"/>
-          <p class="caption">Our aim is to take a sequential unstructured sensory
+          <p class="caption" style="font-size: 1.2em;">Our aim is to take a sequential unstructured sensory
             stream and bind the low-level information into abstract modular concepts to build a memory of reusable concepts,
             called concept library—all without text and in an unsupervised way. These concepts include both static factors
             such as color and shape as well as dynamic factors such as direction and speed of motion. Finally, we seek to
@@ -181,6 +181,26 @@
 </section>
 <!-- End Dreamweaver Framework -->
 
+<!-- Architecture Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Architecture</h2>
+
+        <div class="content has-text-justified">
+          <img src="static/images/arch.png" alt="Dreamweaver Architecture"/>
+          <p class="caption" style="font-size: 1.2em;"><i>Left</i>: The Recurrent Block-Slot Unit (RBSU) is a recurrent unit designed
+            for processing sequences where each item is a set of vectors. RBSU maintains and updates Block-Slots,
+            which represent compositional and semantic concepts such as shape, color, and motion direction. <i>Right</i>: The
+            Dreamweaver model encodes video inputs into Block-Slot representations, which pass through a series of
+            RBSUs with a recurrent structure. It then predicts future frames by decoding the extracted Block-Slots using a
+            transformer decoder, training to minimize the predictive objective.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Presentation video -->
 <!-- <section class="hero is-small is-light">
