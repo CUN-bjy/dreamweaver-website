@@ -165,7 +165,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Overview of Dreamweaver Framework</h2>
+        <h2 class="title is-3">Dreamweaver Framework</h2>
 
         <div class="content has-text-justified">
           <img src="static/images/figure-one.png" alt="Dreamweaver Framework"/>
@@ -196,6 +196,35 @@
             Dreamweaver model encodes video inputs into Block-Slot representations, which pass through a series of
             RBSUs with a recurrent structure. It then predicts future frames by decoding the extracted Block-Slots using a
             transformer decoder, training to minimize the predictive objective.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Concept Discovery Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Unsupervised Modular Concept Discovery from Videos</h2>
+
+        <div class="content has-text-justified">
+          <img src="static/images/dci_graph_iclr.png" alt="Concept Discovery"/>
+          <p class="caption" style="font-size: 1.2em;">
+            We compare our model with the baselines in terms of Disentanglement (D), Completeness (C), Informativeness (I), and Informativeness-Dynamic (I-D). I-D is the informativeness score for dynamic concepts only (e.g., the direction of motion or dance pattern, etc.) to evaluate how effectively the models capture such dynamic concepts.
+          </p>
+            <div class="columns is-centered">
+            <div class="column">
+              <img src="static/images/clustering_clevr.png" alt="Concept Examples"/>
+            </div>
+            <div class="column">
+              <img src="static/images/clustering_sprites.png" alt="Concept Examples"/>
+            </div>
+            <p class="caption has-text-centered" style="font-size: 1.2em;">
+                These illustrates the concepts represented by each block within learned block-slot representations. To achieve this, we gather block representations with the same index and apply clustering methods, such as k-means, following the approach in <a href="https://arxiv.org/abs/2211.01177">Singh et al. (2023)</a>.
+            </p>
+            </div>
         </div>
       </div>
     </div>
