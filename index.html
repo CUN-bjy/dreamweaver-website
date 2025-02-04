@@ -217,27 +217,40 @@
             We compare our model with the baselines in terms of Disentanglement (D), Completeness (C), Informativeness (I), and Informativeness-Dynamic (I-D). I-D is the informativeness score for dynamic concepts only (e.g., direction of motion or dance patterns) to evaluate how effectively the models capture such dynamic concepts.
           </p>
         </div>
-
-        <div class="columns has-text-justified">
-          <div class="column">
-            <div class="content">
-              <img src="static/images/clustering_clevr.png" alt="Concept Examples 1"/>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="static/images/clustering_sprites.png" alt="Concept Examples 2"/>
-            </div>
-          </div>
-        </div>
-        <p class="caption has-text-centered" style="font-size: 1.2em;">
-          This illustrates the concepts represented by each block within the learned block-slot representations. To achieve this, we gather block representations with the same index and apply clustering methods, such as k-means, following the approach in <a href="https://arxiv.org/abs/2211.01177">Singh et al. (2023)</a>.
-        </p></div>
+      </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/clustering_sprites.png" alt="Concept Examples 1"/>
+        <h2 class="subtitle has-text-centered">
+          Moving-Sprites Dataset
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/clustering_clevr.png" alt="Concept Examples 2"/>
+        <h2 class="subtitle has-text-centered">
+          Dancing-CLEVR Dataset
+        </h2>
+      </div>
+  </div>
+  
+  <p class="caption" style="font-size: 1.2em;">
+    This illustrates the concepts represented by each block within the learned block-slot representations. To achieve this, we gather block representations with the same index and apply clustering methods, such as k-means, following the approach in <a href="https://arxiv.org/abs/2211.01177">Singh et al. (2023)</a>.
+  </p>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 <!-- Presentation video -->
 <!-- <section class="hero is-small is-light">
